@@ -59,6 +59,11 @@ int server_handshake(int *to_client) {
   =========================*/
 int client_handshake(int *to_server) {
   int from_server;
+  char * pp_name = (char*) malloc(100*sizeof(char));
+  sprintf(pp_name,"./%d",getpid());
+  if (from_client = open(pp_name,O_RDWR)<0){
+    err();
+  }
   return from_server;
 }
 
